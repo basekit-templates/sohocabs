@@ -1,0 +1,1802 @@
+/* ===============================
+   IMPORT CSS
+   =============================== */
+
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+
+/* ===============================
+   TEMPLATE STYLES
+   =============================== */
+
+
+body {
+  background-color: @color-swatch1;
+  background-image: image('/images/wavecut.png');
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+    width: auto;
+    margin: 0 5%;
+}
+
+
+
+blockquote {
+    margin: 7px 0;
+    padding: 0 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+}
+
+blockquote:before {
+    font-family: georgia;
+    color: @font-swatch5-color;
+    content: open-quote;
+    left: 0;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: 10px;
+    vertical-align: -.4em;
+}
+
+blockquote:after {
+    font-family: georgia;
+    color: @font-swatch5-color;
+    content: close-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-left: 10px;
+    vertical-align: -.4em;
+}
+
+
+
+/* ===============================
+   CUSTOM CSS
+   =============================== */
+
+.main {
+  padding: 20px;
+  background-color: @color-swatch1;
+  box-shadow: 0 3px 10px rgba(110,110,110,0.1);
+}
+
+.main .content-bg {
+  background-color: @color-swatch2;
+  padding: 30px;
+  margin-top: -20px;
+}
+
+.main- {
+  margin: 20px 0 0;
+}
+
+/* HEADER MAIN */
+
+.header-main {
+  padding: 30px 0 26px;
+}
+
+.header-main .header-main-right {
+  float: right;
+}
+
+.header-main .header-main-right h2 {
+  color: @font-swatch6-color;
+  font-size: 17px;
+  padding: 5px 0 0;
+}
+
+.header-main .header-main-right .widget.button button {
+  margin-left: 20px;
+}
+
+.header-main .header-main-right ul {
+  margin: 13px 0 0;
+}
+
+.header-main .header-main-right ul li {
+  display: inline-block;
+  float: left;
+}
+
+/* SUB NAV */
+
+header nav {
+  width: 100%;
+  background-color: darken(@color-swatch7,3%);
+}
+
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header {
+  padding: 0;
+  background-color: @color-swatch7;
+}
+
+/* LOGO */
+
+.widget.logo {
+    display: block;
+    margin-right: 14px;
+    float:left;
+}
+
+.infoheader {
+    display: block;
+    padding: 0;
+    z-index:2;
+    float:left;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+    display: block;
+    float: left;
+    margin-top: 19px;
+}
+
+.widget.companyname a {
+    font-family: @font-swatch10-font-family;
+    font-weight: @font-swatch10-font-weight;
+    color: @font-swatch10-color;
+    line-height: @font-swatch10-line-height;
+    letter-spacing: @font-swatch10-letter-spacing;
+    font-size: @font-swatch10-font-size;
+}
+
+.widget.companyname a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+  background-color: darken(@color-swatch7,5%);
+  background-image: image('/images/footer.png');
+  background-attachment:fixed;
+
+  padding: 4em 0 0;
+  min-height: 150px;
+  color: @color-swatch1;
+}
+
+footer .wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer h1, footer h2, footer h3, footer h4 {
+  color: @color-swatch1;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: @color-swatch1;
+  padding-bottom: 0;
+}
+
+footer a {
+  color: @color-swatch1;
+}
+
+footer .footer2 {
+  padding: 3em 0 .8em;
+}
+
+
+/* ===============================
+   STANDARD NAVIGATION
+   =============================== */
+
+.widget.navigation {
+}
+
+.widget.navigation ul {
+  float: left;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.widget.navigation ul.align-center li
+{
+  text-align: center;
+}
+
+.widget.navigation ul.align-left li
+{
+  text-align: left;
+}
+
+.widget.navigation ul.align-right li
+{
+  text-align: right;
+}
+
+.widget.navigation ul li {
+  float: left;
+  display: block;
+  padding-right: 40px;
+}
+
+.widget.navigation ul li a {
+  display: block;
+  font-family: @font-swatch6-font-family;
+  font-size: @font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  letter-spacing: @font-swatch6-letter-spacing;
+  color: @color-swatch1;
+  
+}
+
+.widget.navigation ul li a:hover {
+  text-decoration: none;
+  color: @color-swatch3;
+}
+
+
+/* ===============================
+   EXTENDED NAVIGATION
+   =============================== */
+
+header .widget.extendednavigation {
+  float: left;
+  position: relative;
+  z-index:1;
+}
+
+.widget.extendednavigation ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+@media @tablet { 
+  .widget.extendednavigation a.pull {
+    top:-26px;
+    right:10px;
+
+  }
+}
+
+@media @mobile { 
+  .widget.extendednavigation a.pull {
+    top:-108px;
+    right:10px;
+  }
+}
+
+.widget.extendednavigation ul.align-center li
+{
+  text-align: center;
+}
+
+.widget.extendednavigation ul.align-left li
+{
+  text-align: left;
+}
+
+.widget.extendednavigation ul.align-right li
+{
+  text-align: right;
+}
+
+.widget.extendednavigation ul li {
+  float: left;
+  display: block;
+  padding: 0;
+}
+
+.widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+  display: block;
+  padding: 14px 27px 14px 20px;
+  font-family: @font-swatch6-font-family;
+  font-size: @font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  letter-spacing: @font-swatch6-letter-spacing;
+  color: @font-swatch6-color;
+  line-height: @font-swatch6-line-height;
+  
+}
+
+.widget.extendednavigation ul li:hover {
+  background-color: @font-swatch6-background-color-hover;
+
+}
+
+.widget.extendednavigation ul li a:hover {
+  text-decoration: none;
+}
+
+.widget.extendednavigation ul li.folder {
+  background-repeat: no-repeat;
+  height: 100%;
+  cursor: pointer;
+}
+
+.widget.extendednavigation li > ul {
+  display: none;
+}
+
+.widget.extendednavigation li:hover > ul {
+  display: block;
+  width: 186px;
+  position: absolute;
+  background-color: @color-swatch7;
+  z-index: 500;
+  padding: 0;
+  margin:0;
+}
+
+.widget.extendednavigation ul li:hover > ul li {
+  background-color: @color-swatch7;
+  display: block;
+  width: 100%;
+}
+
+.widget.extendednavigation ul li:hover > ul li:hover {
+  background-color: @color-swatch3;
+}
+
+.widget.extendednavigation ul li:hover > ul li:first-child {
+  padding-top: 4px;
+}
+
+.widget.extendednavigation ul li:hover > ul li:hover a:hover {
+  color: lighten(@color-swatch2,3%)!important;
+}
+
+.widget.extendednavigation li:hover > ul li a {
+  padding: 0;
+}
+
+
+/* ===============================
+   FEATURE
+   =============================== */
+
+.widget.feature {
+
+}
+
+.widget.feature .feature-bgimg {
+  height: 450px;
+  min-height:initial;
+ }
+
+.widget.feature .content {
+  height: 450px;
+  text-align: right;
+}
+
+.widget.feature .content .spare {
+
+}
+
+/* FEATURE TITLE */
+
+.widget.feature h2 span, .widget.feature h3 span {
+  display: inline-block;
+  background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.7); 
+}
+
+.widget.feature h2 span {
+  padding: 10px 16px;
+}
+
+.widget.feature h3 span {
+  padding: 0px 12px;
+}
+
+.widget.feature h2 {
+  font-family: @font-swatch8-font-family;
+  font-size: @font-swatch8-font-size;
+  font-weight: @font-swatch8-font-weight;
+  line-height: @font-swatch8-line-height;
+  color: @font-swatch8-color;
+  letter-spacing: @font-swatch8-letter-spacing;
+}
+
+/* FEATURE STRAPLINE */
+
+.widget.feature h3 {
+  font-family:@font-swatch9-font-family;
+  font-size:@font-swatch9-font-size;
+  font-weight: @font-swatch9-font-weight;
+  line-height:@font-swatch9-line-height;
+  color: @font-swatch9-color;
+  letter-spacing: @font-swatch9-letter-spacing;
+}
+
+/* FEATURE BUTTON */
+
+.widget.feature .feature-bgimg .content button
+{
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  line-height: @font-swatch7-line-height;
+  letter-spacing: @font-swatch7-letter-spacing;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+
+  padding: 6px 20px 6px 8px;
+  margin: 0;
+  border: none;
+  background-image: image('/images/button-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-decoration: none;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.feature .feature-bgimg .content button:hover {
+  cursor: pointer;
+  background-color: @font-swatch7-background-color-hover;
+}
+
+/* ===============================
+   CONTENT
+   =============================== */
+
+.widget.content
+{
+    padding: 0;
+    overflow: hidden;
+}
+
+.widget.content span.expand
+{
+    font-family: @font-swatch3-font-family;
+    background-color: @color-swatch3;
+    color: @font-swatch7-color;
+    font-size: @font-swatch5-font-size;
+    padding: 4px 8px;
+    margin: 4px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.widget.content span.expand:hover,
+.widget.content span.expand:focus
+{
+    cursor: pointer;
+    background-color: darken(@color-swatch3,5%);
+}
+
+
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+.widget.paypalbuynow .widget.button.paypal {
+  padding: 12px 22px 12px 45px;
+  box-shadow: 0 4px darken(@color-swatch3,15%);
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   DROPBOX WIDGET
+   =============================== */
+   
+.widget.dropbox .b-wrap .btn {
+  box-shadow: 0 4px darken(@color-swatch3,15%);
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+  padding: 12px 22px 12px 45px;
+}
+
+/* ===============================
+   BUTTON CSS
+   =============================== */
+
+.widget.button {
+    padding: 4px 0;
+}
+
+.widget.button button
+{
+  display: block;
+  padding: 5px 24px 5px 8px;
+  margin: 0;
+  border: none;
+  box-shadow: 0 4px darken(@color-swatch3,15%);
+  background-image: image('/images/button-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-decoration: none;
+
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  line-height: @font-swatch7-line-height;
+  letter-spacing: @font-swatch7-letter-spacing;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.button button:hover 
+{
+  background-color: darken(@color-swatch3,2%);
+  cursor: pointer;
+}
+
+/* JUSTIFY */
+
+.widget.button button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.button button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.button button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.button button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.button button.btn.italic {
+    font-style: italic;
+}
+
+.widget.button button.btn.bold {
+    font-weight: bold;
+}
+
+.widget.button span {
+    vertical-align: center;
+}
+
+.widget.button i {
+    margin-right: 5px;
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
+}
+
+/* ===============================
+   IMAGE WIDGET
+   =============================== */
+
+.widget.image img {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    border-width: 0;
+}
+
+.widget.image {
+
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin: 5px;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    text-align: center;
+    
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin: 5px;
+    text-align: center;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+}
+
+/* ===============================
+   LINE WIDGET
+   =============================== */
+
+.widget.line {
+    padding: 20px 0;
+}
+
+hr.line {
+   background-color: darken(@color-swatch2,6%);
+   height: 2px;
+   width: 100%;
+   border: none;
+}
+
+hr.line.align-left {
+   margin: 20px auto 20px 0px;
+}
+
+hr.line.align-center {
+   margin: 20px auto;
+}
+
+hr.line.align-right {
+   margin: 20px 0px 20px auto;
+}
+
+/* ===============================
+   GALLERY WIDGET
+   =============================== */
+
+.widget.gallery {
+    width: 101.2%;
+    margin-left: -0.5%;
+}
+
+.widget.gallery ul {
+    display: block;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.widget.gallery li {
+    float: left;
+    position: relative;
+    width: 33.3%;
+    padding-bottom: 33%;
+}
+
+.widget.gallery li  span.inner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: @color-swatch1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.widget.gallery ul li.one-to-one span.inner {
+    background-size: 100% 100%
+}
+
+.widget.gallery ul li.portrait span.inner {
+    background-size: 100% auto
+}
+
+.widget.gallery ul li.landscape span.inner {
+    background-size: auto 100%
+}
+
+.widget.gallery li span.inner {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    bottom: 16px;
+    overflow: hidden;
+}
+
+.widget.gallery li span.inner img {
+    display: none
+}
+
+.widget.gallery ul:before,
+.widget.gallery ul:after {
+    content: " ";
+    display: table;
+}
+
+.widget.gallery ul:after {
+    clear: both
+}
+
+.widget.gallery ul {
+    *zoom: 1
+}
+
+.widget.gallery li span.inner .title,
+.widget.gallery li span.inner .description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -310px;
+    max-height: 284px;
+    background: @color-swatch1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+    
+}
+
+.widget.gallery li span.inner:hover .title {
+    margin-bottom: 0
+}
+
+.widget.gallery li span.inner .description {
+    display: none
+}
+
+.widget.gallery li span.inner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Lightbox */
+
+.lb-data .lb-caption, .lb-data .lb-number {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:lighten(@font-swatch5-color,50%);
+}
+
+.lb-data .lb-number {
+  font-size:bkscale(@font-swatch5-font-size,0.9);
+}
+
+/* =======================================
+   CLICK TO CALL
+   ==================================== */
+
+.widget.clicktocall {
+    padding: 8px 0
+}
+
+.widget.clicktocall a {
+    padding: 10px 0;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+    text-decoration: none;
+}
+
+.widget.clicktocall a:hover {
+    cursor: pointer;
+}
+
+/* ===============================
+   TWITTER WIDGET
+   =============================== */
+
+.widget.twitter {
+}
+
+.widget.twitter a:hover {
+    text-decoration: underline;
+}
+
+.widget.twitter ul {
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+.widget.twitter ul li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    padding-bottom: 30px;
+}
+
+.widget.twitter ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.widget.twitter a, .widget.twitter time.created_at, .widget.twitter span {
+   color: @font-swatch5-color;
+   font-size: 10px;
+   text-decoration: none;
+}
+
+.widget.twitter .twitter-content a span.bk-full-name {
+    font-family: @font-swatch5-font-family;
+    color: @color-swatch3;
+    font-size: 14px;
+}
+
+.widget.twitter p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 6px;
+    color: @font-swatch5-color;
+    line-height: @font-swatch5-line-height;
+}
+
+.widget.twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 20px;
+}
+
+
+/* ===============================
+   CONTACT FORM
+   =============================== */
+
+.widget.contactform form {
+    display: block;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+}
+
+.widget.contactform fieldset {
+    border: none;
+    padding: 0;
+}
+
+.widget.contactform fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@font-swatch4-color;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.contactform fieldset input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid lighten(@color-swatch5,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.widget.contactform fieldset textarea {
+    height: 100px;
+    width: 100%;
+    border: 1px solid lighten(@color-swatch5,13%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    padding-top: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.widget.contactform fieldset button.btn {
+    display: block;
+    padding: 6px 8px;
+    margin: 0;
+    border: none;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+  
+.widget.contactform fieldset button.btn:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
+
+.widget.contactform fieldset button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.contactform fieldset button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.contactform fieldset button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.contactform fieldset button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.contactform fieldset button.btn.italic {
+    font-style: italic;
+}
+
+.widget.contactform fieldset button.btn.bold {
+    font-weight: bold;
+}
+
+/* ===============================
+   REDIRECT WIDGET
+   =============================== */
+
+.widget.redirecttodesktop {
+    padding: 8px 0;
+}
+
+.widget.redirecttodesktop a {
+    padding-right: 30px;
+    padding-top: 2px;
+    background-image: image('/images/desktop.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.widget.redirecttodesktop a:hover, .desktop a:active {
+    background-image: image('/images/desktop.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ===============================
+   TWEET THIS
+   =============================== */
+
+.widget.tweet {
+   padding: 14px 0; 
+}
+
+.widget.tweet a {
+  padding: 5px 8px 5px 34px;
+  margin: 0;
+  border: none;
+  box-shadow: 0 4px #02aad7;
+  background-image: image('/images/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: #00bdef;
+  color: @color-swatch1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.tweet a:hover, .tweet a:active {
+  background-color: #00b4e3;
+  background-image: image('/images/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+  cursor: pointer;
+}
+
+/* ==================================
+   SOCIAL BAR WIDGET / SOCIAL PROFILE
+   =============================== */
+
+.widget.socialicons,
+.widget.profile .bk-profile-socialicons {
+    padding: 0px;
+    font-size: 1em;
+    font-family: @font-swatch7-font-family;
+}
+
+.widget.socialicons a,
+.widget.profile .bk-profile-socialicons a {
+    text-decoration: none;
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+
+.widget.profile .bk-profile-socialicons span {
+    display: inline-block
+}
+
+.widget.socialicons span a,
+.widget.profile .bk-profile-socialicons span a {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    background-size: 18px;
+    width: 32px;
+    height: 32px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: @font-swatch7-background-color;
+    box-shadow: 0 3px 0px darken(@font-swatch7-background-color,8%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.widget.profile .bk-profile-socialicons span a {
+    background-color: @font-swatch7-background-color;
+    margin-right: 10px;
+}
+
+/* FOOTER 2 */
+
+footer .footer2 .widget.profile .bk-profile-socialicons span a {
+    width: 26px;
+    height: 26px;
+    background-size: 15px;
+    margin-right: 7px;
+}
+
+footer .footer2 .columns-two-right .widget.profile .bk-profile-socialicons span a {
+    text-align: left;
+}
+
+footer .footer2 .widget.profile .bk-profile-socialicons {
+    padding: 2px 0;
+}
+
+.widget.socialicons span a:hover,
+.widget.profile 
+.bk-profile-socialicons span a:hover {
+    background-color: @font-swatch7-background-color-hover
+}
+
+/* SVG ICONS */
+
+.svg .widget.socialicons span.bk-socialicons-twitter a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/social/socialicons-twitter.svg');
+}
+
+.svg .widget.socialicons span.bk-socialicons-linkedin a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/social/socialicons-linkedin.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-facebook a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/social/socialicons-facebook.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-rss a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/social/socialicons-rss.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-googleplus a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/social/socialicons-googleplus.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-youtube a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/social/socialicons-youtube.svg')
+}
+
+/* PNG ICONS */
+
+.widget.socialicons span.bk-socialicons-twitter a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/social/socialicons-twitter.png');
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/social/socialicons-linkedin.png')
+}
+
+.widget.socialicons span.bk-socialicons-facebook a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/social/socialicons-facebook.png')
+}
+
+.widget.socialicons span.bk-socialicons-rss a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/social/socialicons-rss.png')
+}
+
+.widget.socialicons span.bk-socialicons-googleplus a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/social/socialicons-googleplus.png')
+}
+
+.widget.socialicons span.bk-socialicons-youtube a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/social/socialicons-youtube.png')
+}
+
+/* ===============================
+   PROFILE WIDGET
+   =============================== */
+
+.widget.profile span,
+.widget.profile a {
+    display: block;
+    font-size: @font-swatch5-font-size;
+    font-family: @font-swatch5-font-family;
+    color: @font-swatch6-color;
+    line-height: @font-swatch5-line-height;
+    font-weight: @font-swatch5-font-weight;
+}
+
+.widget.profile a:hover {
+    color: @color-swatch6;
+    text-decoration: none;
+}
+
+/* FOOTER PROFILE - TWITTER */
+
+.widget.profile ul.twitter {
+    padding: 0px;
+    margin: 0px;
+}
+
+.widget.profile ul.twitter li {
+    list-style: none
+}
+
+.widget.profile ul.twitter img,
+.widget.profile ul.twitter time,
+.widget.profile ul.twitter span {
+    display: none
+}
+
+/* FOOTER PROFILE - SIGNUP FORM */
+
+.widget.profile form {
+  padding: 0 0 20px;
+}
+
+footer .footer2 .widget.profile form {
+  padding: 0 0 8px;
+}
+
+.widget.profile form fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.widget.profile form label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight:@font-swatch5-font-weight;
+    line-height:@font-swatch5-line-height;
+    color:@font-swatch6-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.profile form input {
+    height: 40px;
+    width: 50%;
+    border: 1px solid lighten(@color-swatch5,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    margin-top: 6px;
+}
+
+.widget.profile form input:focus {
+    outline: none;
+}
+
+.widget.profile form button {
+    height: 40px;
+    margin: 0;
+    position: relative;
+    top: -2px;
+    border: none;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    background-color: @font-swatch7-background-color;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    color: darken(@font-swatch7-color, 20%);
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.profile form button:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
+
+/* ===============================
+   MAP WIDGET
+   =============================== */
+
+.widget.map {
+
+}
+
+/* ===============================
+   SIGNUP FORM WIDGET
+   =============================== */
+
+.widget.signupform {
+  padding: 0px;
+}
+
+.widget.signupform fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.widget.signupform label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@font-swatch4-color;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.signupform fieldset input {
+    height: 40px;
+    width: 50%;
+    border: 1px solid lighten(@color-swatch5,10%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 8px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.widget.signupform fieldset input:focus {
+  outline: none;
+}
+
+.widget.signupform button {
+    height: 40px;
+    margin: 0;
+    position: relative;
+    top: -2px;
+    border: none;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    background-color: @font-swatch7-background-color;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    color: @font-swatch7-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.signupform button:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
+
+/* ===============================
+   SLIDESHOW WIDGET
+   =============================== */
+.widget.responsiveslideshow .slideshow-image-list {
+    height: 300px;
+    min-height:initial;
+}
+
+.widget.responsiveslideshow .slideshow-widget {
+    background-color: lighten(@color-swatch5,17%);
+}
+.widget.responsiveslideshow span.inner img {
+    width:auto;
+}
+
+.widget.responsiveslideshow .image-wrapper {
+    padding:15px;
+}
+
+.widget.responsiveslideshow .crop .image-wrapper {
+    padding:0;
+}
+
+.widget.responsiveslideshow .content-wrapper {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:auto;
+    background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(lighten(@color-swatch4,10%)), 1); 
+}
+
+.widget.responsiveslideshow .slideshow-image-list {
+    height:450px;
+  }
+
+.widget.responsiveslideshow .title {
+    display: inline-block;
+    padding:5px 20px 0 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .description {
+    display: block;
+    padding: 6px 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+    font-size: 0;
+    z-index: 11;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  left: 10px;
+  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  right: 10px;
+  background: image('/images/slideshow-arrow-right.png') no-repeat center right;   
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls {
+  margin-top: 10px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play
+{
+    background: image('/images/slideshow-play.png') center no-repeat;
+    background-size: 100%;
+    border-radius:10px;
+    font-size:0;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
+{
+    background: image('/images/slideshow-pause.png') center no-repeat;
+    background-size: 100%;  
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot
+{
+    border:none;
+    background:transparent image('/images/slideshow-dot-not-selected.png') center no-repeat;
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot.selected
+{
+    background:transparent image('/images/slideshow-dot-selected.png') center no-repeat;
+}
+
+
+
+/* ===============================
+   IPAD WIDTH
+   =============================== */
+
+@media only screen and (max-width: 768px) {
+
+  .wrapper {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  /* NAV */
+
+  header nav {
+    padding-top: 36px;
+  }
+
+  .widget.extendednavigation {
+    width: 100%;
+    padding: 0;
+  }
+  .widget .extendednavigation {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  #page-zones__template-widgets__extendednavigation-navigationheader {
+    overflow: visible;
+  }
+
+    /* NAV */
+
+    .widget .extendednavigation ul {
+        width: 100%;
+        display: none;
+        padding: 0px; 
+    }
+
+    .widget .extendednavigation li {
+        width: 100%;
+        padding: 0px;
+        border-bottom: 1px solid darken(@color-swatch2,3%);
+    }
+
+    .widget.extendednavigation ul li.folder {
+      padding-left: 0;
+    }
+
+    .widget .extendednavigation li:last-child {
+      border-bottom: 0;
+    }
+
+    .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+        padding: 18px 12px;
+    }
+
+    .widget.extendednavigation ul li > ul {
+        display: none!important;
+    }
+
+    .widget.extendednavigation ul li:hover > ul {
+        display: block!important;
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li {
+      border-bottom: 0;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li a {
+        padding: 12px 18px;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li a .text {
+      padding: 6px 26px;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li:first-child {
+
+    }
+
+  /* FEATURE */
+
+  .widget.feature .feature-bgimg {
+    height: 350px;
+  }
+
+  .widget.feature .content {
+    height: 350px;
+  }
+
+  .widget.feature .content .spare.wrapper {
+    width: 100%;
+  }
+
+  .widget.feature h2 {
+    font-size: bkscale(@font-swatch8-font-size,0.8);
+    line-height: bkscale(@font-swatch8-line-height,0.8);
+  }
+
+  /* OTHER */
+
+  header h2 {
+    display: none;
+  }
+
+  section.feature-row .columns-two-right {
+    display: none;
+  }  
+
+  section.feature-row .columns-two-left {
+    margin-bottom: 0;
+  } 
+
+  footer section.footer2 {
+    padding: 2em 0 .8em;
+  }
+
+  .widget.twitter .twitter-profile-pic {
+    height: auto;
+  }
+
+  .widget.twitter p {
+    font-size: 12px;
+  }
+
+  .widget.signupform fieldset input {
+    width: 70%;
+  }
+
+   /* GALLERY */
+  .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    max-height: 180px;
+    font-size:bkscale(@font-swatch5-font-size,0.9);
+    line-height:bkscale(@font-swatch5-line-height,0.9);
+  }
+
+
+  /* SLIDESHOW */
+
+    .widget.responsiveslideshow .slideshow-image-list, 
+    .widget.responsiveslideshow .slideshow-widget {
+        height:350px;
+        min-height:initial;
+    }
+
+}
+
+/* ===============================
+   IPHONE WIDTH
+   =============================== */
+
+@media only screen and (max-width: 480px) {
+
+  .wrapper {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .main .content-bg {
+    padding: 20px;
+  }
+
+  section.main {
+    padding: 10px;
+  }
+
+  section.main .content-bg {
+    padding: 20px;
+  }
+
+  /* GALLERY */
+
+    .widget.gallery ul.gallery-widget li
+    {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+
+    /* SLIDESHOW */
+
+    .widget.responsiveslideshow .slideshow-image-list, 
+    .widget.responsiveslideshow .slideshow-widget {
+        height:280px;
+    }
+
+  /* CLICK TO CALL */
+
+  .widget.clicktocall {
+    padding: 20px 0;
+  }
+
+  .widget.clicktocall a {
+    background-image: image('/images/ic-desktop-call-mob.png');
+    background-color: @font-swatch7-background-color;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding: 10px 8px 10px 36px;
+    border: none;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    letter-spacing: @font-swatch7-letter-spacing;
+    line-height: @font-swatch7-line-height;
+    color: @color-swatch1;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+  }
+
+  .widget.clicktocall a:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+  }
+
+  footer section.footer2 {
+    padding: 2em 0 .8em;
+  }
+
+  /* FEATURE */
+
+  .widget.feature .feature-bgimg {
+    height: 280px;
+  }
+
+  .widget.feature .content {
+    height: 280px;
+  }
+
+  .widget.feature .content .spare.wrapper {
+    width: 100%;
+  }
+
+  .widget.feature h2 {
+    font-size: bkscale(@font-swatch8-font-size,0.7);
+    line-height: bkscale(@font-swatch8-line-height,0.7);
+  }
+
+  .widget.feature h3 {
+    font-size: bkscale(@font-swatch9-font-size,0.8);
+    line-height: bkscale(@font-swatch9-line-height,0.9);
+  }
+
+  .header-main-right {
+    display: none;
+  }
+
+  .header-sub {
+    padding: 0 0 20px;
+    background-color: transparent;
+  }
+
+  section.main-zone {
+    margin: 10px 0 0;
+  }
+
+  .widget.twitter .twitter-profile-pic {
+    height: 110px;
+  }
+
+
+ /* GALLERY */
+  .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    max-height: 150px;
+    font-size:bkscale(@font-swatch5-font-size,0.9);
+    line-height:bkscale(@font-swatch5-line-height,0.9);
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 3em 0 0;
+  }
+
+  footer .footer2 .columns-two-right {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 960px; /* 1140px - 10% for margins */
+  .wrapper {
+      width: auto;
+      background: none;
+      box-shadow: none;
+    }
+    margin: 0 auto;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+

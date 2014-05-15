@@ -1,0 +1,147 @@
+{
+	"name":"Joel Money",
+	"thumbnail":"joel-money.png",
+	"screenshot":"joel-money.png",
+    "tags": {
+    "en": ["colorful", "bright", "political", "organisation", "modern", "colourful", "professional", "corporate", "campaign", "democrat", "politician", "elegant", "candidate", "debate", "politics", "voters", "election", "social"],
+    "es": ["colorido", "claro", "electoral", "organizacion", "moderno", "profesional", "corporativo", "campaña", "democrativo", "político", "elegante", "candidato", "debate", "política", "votantes", "elecciones", "social"],
+    "br": ["colorido", "claro", "politico", "instituição", "moderno", "profissional", "corporativo", "campanha", "democrático", "político", "elegante", "candidato", "debate", "política", "eleitores", "eleição", "social"]
+    },
+	"colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#f4f8f9",
+            "color3":"#d0002c",
+            "color4":"#738693",
+            "color5":"#b6b6b6",
+            "color6":"#ffffff",
+            "color7":"#095387"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#f7f7f7",
+            "color3":"#1e9ec7",
+            "color4":"#738693",
+            "color5":"#9e9e9e",
+            "color6":"#ffffff",
+            "color7":"#ad0000"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#f5f5f5",
+            "color3":"#d0006c",
+            "color4":"#525252",
+            "color5":"#7e7e7e",
+            "color6":"#ffffff",
+            "color7":"#2b2b2b"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#F7F7F7",
+            "color3":"#DF7420",
+            "color4":"#979797",
+            "color5":"#868686",
+            "color6":"#ffffff",
+            "color7":"#549EA8"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#f7f7f7",
+            "color3":"#DF7F7F",
+            "color4":"#8B8B8B",
+            "color5":"#aaaaaa",
+            "color6":"#ffffff",
+            "color7":"#5F5F5F"
+        }
+    },
+    "fontSwatch": {
+       "title": "Montserrat",
+        "font1": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "36px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "12px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "11px",
+            "font-weight": "inherit",
+            "line-height": "20px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch6",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "darken(@color-swatch7,5%)"
+        },
+        "font7": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "14px",
+            "font-weight": "inherit",
+            "line-height": "24px",
+            "color": "@color-swatch1",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "lighten(@color-swatch3,3%)"
+        },
+        "font8": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "22px",
+            "font-weight": "inherit",
+            "line-height": "50px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "15px",
+            "font-weight": "inherit",
+            "line-height": "40px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
+            "font-size": "30px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch6",
+            "letter-spacing": "1px"
+        }
+    }
+}
+
